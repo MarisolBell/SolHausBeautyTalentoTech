@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Variables de Colores */
+:root{
+    --primary-color:  #2C3E50;
+    --secondary-color:#ab352d;
+    --background-color: #e0dcdc; 
+    --background-secondary:#f4766d;
+    --backgroung-orange:#fea29b; 
+    --text-color: #242424; 
+    --accent-color:#f14e42 ; 
+    --border-color: #737679; 
+    --clr-white: #FFFFFF;
+    --clr-black: #242424;
+}
+/* Estilos generales */
+body {
+    color: var(--clr-black);
+    line-height: 1.6;
+    background-color: var(--background-secondary);
+  }
+  
+  /* Estilos para el contenedor del post */
+  .post-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--backgroung-orange);
+  }
+  
+  .post-content {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    background-color:var(--background-secondary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  /* Imagen de encabezado */
+  .post-banner {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Título del post */
+  .post-title {
+    font-size: 2.5rem;
+    color: var(--primary-color); /* Color principal */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Texto del post */
+  .post-text p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+ 
+  /********media queries***********************************/
+@media screen and (max-width:960px){
+  .abrir-menu{
+      display:block;
+      margin:0.5 rem;
+  }
+  .nav{
+      display: none;
+  }
+}
+  @media (max-width: 768px) {
+    .post-content {
+      padding: 10px;
+    }
+    .post-title {
+      font-size: 2rem;
+    }
+    .post-text p {
+      font-size: 1rem;
+    }
+  }
+  

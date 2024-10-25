@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubre una amplia selección de perfumes, cremas y cosméticos en SolHaus Beauty. Realza tu belleza con nuestros productos de alta calidad. ¡Compra ahora!"
+    />
+    <link rel="shortcut icon" href="./logo.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/sections.css" />
+    <link rel="stylesheet" href="./css/review.css" />
+
+    <title>SolHaus Beauty Tienda Online</title>
+  </head>
+  <body>
+    <header id="top">
+      <h1 class="header-announcement_text">BIENVENIDOS A SOLHAUS BEAUTY</h1>
+
+      <div class="nav-menu">
+        <div class="brand">
+          <a href="./index.html"
+            ><img
+              class="logo"
+              src="./img/logo.png"
+              alt="logo de SolHaus Beauty"
+          /></a>
+          <h3 class="logo-title">SOLHAUS Beauty</h3>
+        </div>
+
+        <nav class="nav" id="nav">
+          <ul class="menu">
+            <li class="menu__item active"><a href="./index.html">Inicio</a></li>
+            <li class="menu__item productos">
+              <a href="./pages/productos.html">Productos</a>
+              <ul class="submenu">
+                <li><a href="#">Cosméticos</a></li>
+                <li><a href="#">Perfumes</a></li>
+              </ul>
+            </li>
+
+            <li class="menu__item">
+              <a href="./pages/informacion.html">Información</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="./pages/contacto.html">Contacto</a>
+            </li>
+
+            <li>
+              <div class="dropdown">
+                <button id="user-btn" class="dropdown-user-btn">
+                  <i class="bi bi-person"></i>
+                </button>
+                <div class="dropdown-content" id="dropdown-content">
+                  <a href="#">Iniciar sesión</a>
+                  <a href="#">Registrarse</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="right-icons">
+          <div class="search">
+            <button type="button" id="search-button" class="search-btn">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+          <div class="bag-container">
+            <a class="bag" href="#"><i class="bi bi-bag"></i></a>
+            <span id="numerito" class="numerito">0</span>
+          </div>
+        </div>
+        <button class="abrir-menu" id="abrir">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="banner-ppal">
+        <img src="./img/slider_1-139.webp" alt="Banner promocional" />
+      </section>
+      <section class="promos-bancarias">
+        <img
+          src="./img/20250c63-018e-4702-99fc-279539db8221___48975507d2d87c60119a4ebadfec9a97.webp"
+          alt="banner pago en 6 cuotas sin interés"
+        />
+      </section>
+
+      <section class="banner-dividido">
+        <a href="./pages/outletProductos.html" class="banner-mitad">
+          <img src="./img/banner-2.webp" alt="Banner de outlet" />
+        </a>
+        <a href="./pages/productos.html" class="banner-mitad">
+          <img src="./img/banner-3.webp" alt="Banner de marcas" />
+        </a>
+      </section>
+
+      <section class="post-container">
+        <div class="post">
+          <img src="./img/post-acne.webp" alt="imagen sobre rostro con acné." />
+          <h2 class="post-titulo">
+            ¡Adiós al acné! Conoce las claves para combatirlo y evitar su
+            reaparición
+          </h2>
+          <a class="post-info" href="./pages/post-acne.html">Ver Más</a>
+        </div>
+
+        <div class="post">
+          <img
+            src="./img/post-IgredientesCuidado.webp"
+            alt="imagen sobre componentes claves para el cuidado de la piel"
+          />
+          <h2 class="post-titulo">
+            Ingredientes clave en los productos de cuidado de la piel: lo que
+            necesitas saber
+          </h2>
+          <a class="post-info" href="./pages/post-ingredientes.html">Ver Más</a>
+        </div>
+        <div class="post">
+          <img
+            src="./img/post-protectorSolar.webp"
+            alt="imagen protector solar"
+          />
+          <h2 class="post-titulo">
+            ¡Protege tu piel del sol con el protector solar adecuado!
+          </h2>
+          <a class="post-info" href="./pages/post-protector-solar.html"
+            >Ver Más</a
+          >
+        </div>
+        <div class="post">
+          <img
+            src="./img/post-tipoCrema.webp"
+            alt="imagen sobre cremas para hidratar la piel"
+          />
+          <h2 class="post-titulo">
+            ¿Qué tipo de crema hidratante necesita tu piel? Descubrilo
+          </h2>
+          <a class="post-info" href="./pages/post-crema-hidratante.html"
+            >Ver Más</a
+          >
+        </div>
+      </section>
+
+      <section class="review-section">
+        <h2 class="reviews-title">Comentarios de nuestros clientes</h2>
+
+        <div class="review">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <p class="comment">
+            "¡Maravillosa! La crema me dejó el rostro suave y renovado!"
+          </p>
+          <p class="author">Susana</p>
+        </div>
+
+        <div class="review">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <p class="comment">
+            "El aceite de argán me dejó el pelo súper brillante."
+          </p>
+          <p class="author">Juliana</p>
+        </div>
+
+        <div class="review">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <p class="comment">
+            "La mascarilla facial es lo mejor que he probado. Mi piel luce más
+            luminosa."
+          </p>
+          <p class="author">Carolina</p>
+        </div>
+
+        <div class="review">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <p class="comment">
+            "El exfoliante corporal es perfecto, deja la piel suave y con un
+            aroma increíble."
+          </p>
+          <p class="author">Daniela</p>
+        </div>
+
+        <div class="review">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <p class="comment">
+            "¡El sérum antiedad me encanta! Mi piel se siente más firme y
+            tersa."
+          </p>
+          <p class="author">Valeria</p>
+        </div>
+
+        <div class="review">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <p class="comment">
+            "Compré el set de cuidado diario y no podría estar más feliz, mi
+            piel está súper hidratada."
+          </p>
+          <p class="author">Mónica</p>
+        </div>
+      </section>
+
+      <section class="newsletter-container">
+        <h5 class="newsletter-container-title">
+          Dejanos tu mail para recibir novedades!
+        </h5>
+        <form id="newsletter-form" action="submit">
+          <input
+            class="newsletter-input"
+            type="email"
+            name=""
+            id=""
+            placeholder="Tu e-mail"
+          />
+          <button class="send-btn">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="suport-info">
+        <div class="medios-pagos-container">
+          <h3 class="medios-tittle">Medios de Pago</h3>
+          <div class="medios-pagos-image">
+            <img src="./img/mercadopago.png" alt="Mercado pago" />
+            <img src="./img/mastercard.png" alt="Mastercard" />
+            <img src="./img/visa.png" alt="Visa" />
+            <img src="./img/american-express.png" alt="American Express" />
+            <img src="./img/cabal.png" alt="Cabal" />
+            <img src="./img/maestro.png" alt="Maestro" />
+            <img src="./img/diners-club.png" alt="Dinners" />
+            <img src="./img/nativa.png" alt="Nativa" />
+            <img src="./img/argencard.png" alt="Argencard" />
+            <img src="./img/naranja.png" alt="Naranja" />
+            <img src="./img/pagofacil.png" alt="Pago Fácil" />
+            <img src="./img/rapipago.png" alt="Rapipago" />
+            <img src="./img/deposito.png" alt="Depósito" />
+            <img src="./img/acordar.png" alt="Acordar con el vendedor" />
+            <img src="./img/efectivo.png" alt="Efectivo" />
+          </div>
+        </div>
+        <div class="medios-envios">
+          <h3 class="medios-tittle">Medios de Envío</h3>
+          <div class="medios-envios-image">
+            <img src="./img/correo-argentino.png" alt="Correo Argentino" />
+            <img src="./img/e-pick.png" alt="e-pick" />
+            <img src="./img/oca.png" alt="Oca" />
+            <img src="./img/retiro-local.png" alt="Retiro en tienda" />
+          </div>
+        </div>
+        <div class="redes-sociales">
+          <h3 class="medios-tittle">Nuestras Redes Sociales</h3>
+          <div>
+            <ul class="redes-sociales-items">
+              <li class="redes-sociales-icon">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li class="redes-sociales-icon">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li class="redes-sociales-icon">
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contacto">
+          <h3 class="medios-tittle">Contacto</h3>
+          <ul class="contacto-items">
+            <li class="contacto-item">
+              <i class="bi bi-envelope-at-fill"></i>SolHausBeauty@gmail.com
+            </li>
+            <li class="contacto-item">
+              <i class="bi bi-phone-vibrate-fill"></i>1132884567
+            </li>
+            <li class="contacto-item">
+              <i class="bi bi-shop"></i> Av. Presidente Perón 196, San Miguel.
+              Bs. As
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="#top" id="scroll-up" class="scroll-up">
+        <i class="bi bi-file-arrow-up-fill"></i>
+      </a>
+      <div>
+        <p class="page-creator">
+          Creado por SolCoder Talento Tech 2024<i class="bi bi-c-circle"></i>
+        </p>
+      </div>
+    </footer>
+    <img
+      class="logo-whatsapp"
+      src="./img/whatsapp-logo.png"
+      alt="logo de whatsapp"
+    />
+  </body>
+</html>

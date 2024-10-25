@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Variables de Colores */
+:root{
+    --primary-color:  #2C3E50;
+    --secondary-color:#ab352d;
+    --background-color: #e0dcdc; 
+    --background-secondary: #f0e5e5; 
+    --backgroung-orange:#f28981;
+    --text-color: #242424; 
+    --accent-color:#f14e42 ; 
+    --border-color: #737679; 
+    --clr-white: #FFFFFF;
+    --clr-black: #242424;
+}
+
+
+/* Sección de reseñas */
+.reviews-title {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    color: var(--accent-color)
+}
+
+
+.review-section {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    padding-bottom: 2rem; 
+    padding-inline: 0.5rem;
+    background-color: var(--background-color);
+}
+
+.review {
+    background-color:var(--clr-white);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stars {
+    color: #FFD700; 
+}
+
+.comment {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.author {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .review-section {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .review-section {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+    }
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding :0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+/* Variables de Colores */
+:root{
+    --primary-color:  #2C3E50;
+    --secondary-color:#ab352d;
+    --background-color: #e0dcdc; 
+    --background-secondary: #f0e5e5; 
+    --backgroung-orange:#f28981;
+    --text-color: #242424; 
+    --accent-color:#f14e42 ; 
+    --border-color: #737679; 
+    --clr-white: #FFFFFF;
+    --clr-black: #242424;
+}
+
+header{
+    z-index:1;
+}
+
+/* Estilos del componente Informacion */
+.informacion-container {
+    background-color: var(--background-color-lightGray);
+    padding: 2rem;
+    color: var(--clr-black);
+    line-height: 1.6;
+}
+
+/* Estilo para los títulos (h3) */
+.informacion-title {
+    color: var(--background-color-gray);
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    margin-top: 2rem; 
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.informacion-title::before {
+    content: '';
+    display: inline-block;
+    width: 0.4rem;
+    height: 2rem;
+    background-color: var(--background-color-gray);
+    margin-right: 1rem;
+}
+
+/* Estilo para los párrafos */
+.informacion-text {
+    margin-bottom: 1.5rem; 
+    font-size: 1.1rem;
+}
+
+
+.informacion-text + .informacion-title {
+    margin-top: 2rem; 
+}
+
+
+.informacion-list {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.informacion-list-item {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.75rem;
+}
+
+.informacion-list-item::before {
+    content: "\f105"; /* Código del ícono de Bootstrap (Chevron Right) */
+    font-family: "Bootstrap Icons";
+    position: absolute;
+    left: 0;
+    top: 0.15rem;
+    color: var(--accent-color);
+}
+
+
+.informacion-icon {
+    margin-right: 0.75rem;
+    color: var(--background-color-gray);
+}
+
+/********media queries***********************************/
+@media screen and (max-width:960px){
+    .abrir-menu{
+        display:block;
+        margin:0.5 rem;
+    }
+    .nav{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .informacion-container {
+        padding: 1rem;
+    }
+
+    .informacion-title {
+        font-size: 1.25rem;
+    }
+
+    .informacion-text {
+        font-size: 1rem;
+    }
+}

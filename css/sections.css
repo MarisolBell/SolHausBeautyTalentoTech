@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Variables de Colores */
+:root{
+    --primary-color:  #2C3E50;
+    --secondary-color:#ab352d;
+    --background-color: #e0dcdc; 
+    --background-secondary: #f0e5e5; 
+    --backgroung-orange:#f28981;
+    --text-color: #242424; 
+    --accent-color:#f14e42 ; 
+    --border-color: #737679; 
+    --clr-white: #FFFFFF;
+    --clr-black: #242424;
+}
+
+
+/*******sección Banner Principal*********************** */
+
+/* Sección Banner Principal */
+.banner-ppal {
+    width: 100vw; 
+    overflow:hidden; 
+}
+
+/* Imagen dentro del banner */
+.banner-ppal img {
+    width: 100%; 
+    height: auto; 
+    max-height: 100vh;
+    object-fit: cover; 
+    box-shadow: 0 4px 6px var(--accent-color); 
+}
+/*******sección Banner novedades y marcas*************** */
+
+.banner-dividido {
+    display: flex;
+    width: 100%; 
+    height: 50vh; 
+    gap:2rem;
+    padding:1rem; 
+    background-color: var(--background-secondary);
+    
+}
+  
+  .banner-mitad {
+    /* flex: 1;  */
+    display: block; /* Asegura que los enlaces funcionen correctamente */
+    overflow: hidden; 
+  }
+
+  .banner-mitad img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; /* Mantiene la proporción de la imagen sin recortarla */
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .banner-mitad:hover img {
+    transform: scale(1.02); 
+  }
+  
+/* ********sección post informativos******************** * */
+
+.post-container {
+    display: flex ;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    gap: 1.5rem; 
+    align-items: center;
+    padding: 1rem; 
+    width: 100%;
+    height:auto;
+    background-color:var(--background-secondary);
+    overflow: hidden;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 22%; /* Ajusta el ancho de cada publicación */
+    min-width:250px;
+    max-width: 22%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--clr-white);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.post:hover {
+    transform: scale(1.05); /* Agrega un efecto hover suave */
+}
+
+.post img {
+    
+    height: 200px;
+    margin-bottom: 1rem;
+    object-fit: cover; 
+}
+
+.post h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.post a {
+    text-align: center;
+    margin-top: auto;
+    background-color: var(--accent-color);
+    color: var(--clr-white);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post a:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/******sección Promos Bancarias*********************** */
+
+
+.promos-bancarias {
+    width: 100vw; 
+    overflow:hidden; 
+}
+
+
+.promos-bancarias img {
+    width: 100%; 
+    height: auto; 
+    max-height: 100vh;
+    object-fit: cover; 
+    box-shadow: 0 4px 6px var(--accent-color); 
+}
+
+
+/********SECTION NEWSLETTER***************************/
+
+.newsletter-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:2.5rem;
+    background-color: var(--accent-color);
+    color: var(--clr-white);
+}
+
+.newsletter-container-title{
+    font-size:1.2rem;
+   
+}
+
+.send-btn{
+    border:none;
+    color:transparent;
+    padding:10px 25px;
+    margin-inline: 2rem;
+    border-radius:6px;
+    cursor:pointer;
+    background-color:var(--secondary-color);
+    color:var(--clr-white);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.send-btn:hover{
+    background-color:var(--primary-color);
+    color:var(--clr-white); 
+    
+}
+
+.newsletter-input{
+    margin-left: 2rem;
+    border-radius: 6px;
+    padding:10px 50px;
+    font-size: 1.2rem;
+    
+}
+
+/****************media queries****************************/
+
+@media screen and (max-width:960px){
+    .newsletter-container{
+        flex-wrap: wrap;
+    }
+    .newsletter-container-title{
+        margin-bottom: 2rem;
+    }
+    
+    .nav{
+        opacity:0;
+        visibility: hidden;
+        position: absolute;
+        display:flex;
+        flex-direction: column;
+        align-items: end;
+        gap:1rem;
+        top:0;
+        right:0;
+        bottom: 0;
+        background-color: var(--clr-black);
+        padding: 4.7rem;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-dividido {
+        flex-direction: column; /* Los banners se apilarán en columna */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .banner-mitad {
+        margin-bottom: 1rem; /* Añade espacio entre los banners en móviles */
+    }
+
+    .banner-mitad img {
+        height: auto; /* Asegura que las imágenes mantengan proporciones adecuadas */
+    }
+}
+
+
+@media screen and (max-width:625px){
+    
+    .newsletter-input{
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+    }
+    .newsletter-container-title{
+        text-align: center;
+       
+    }
+
+    .banner-dividido {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .banner-mitad {
+        margin-bottom: 1rem; 
+    }
+
+    .banner-mitad img {
+        height: auto; 
+    }
+
+    .post {
+        max-width: 90%; /* Permite que las tarjetas ocupen casi todo el ancho en móviles */
+        width: 90%; /* Ajuste del ancho */
+        flex-basis: 90%; /* Controla mejor la distribución con flexbox */
+    }
+}
+
+/* Ajustes adicionales para pantallas más pequeñas (ej. móviles muy pequeños) */
+@media screen and (max-width:480px) {
+    .post {
+        max-width: 100%; /* Ocupa el 100% del contenedor en pantallas muy pequeñas */
+        width: 100%;
+        flex-basis: 100%;
+    }
+}
+
+
+
