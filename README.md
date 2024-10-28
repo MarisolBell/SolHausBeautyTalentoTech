@@ -14,7 +14,9 @@ SolHaus Beauty es una página web dedicada a la venta de productos de belleza, i
 
 ## Características
 
-- **Catálogo de Productos**: Muestra una selección de productos de belleza.Proximaménte en página Productos- Tienda SolHaus Beauty la cúal está en construcción. (segunda entrega del proyecto.)
+- **Catálogo de Productos**: Posee una  sección de outletProductos : la misma está  organizada en cards de forma responsiva utilizando Flexbox.
+
+-Proximaménte en página Productos- Tienda SolHaus Beauty la cúal está en construcción. (segunda entrega del proyecto.)
 
 - **Consumo de API**: Utilizaremos  la API de DummyJSON para obtener y mostrar productos. (segunda entrega del proyecto)
 
@@ -28,9 +30,9 @@ El nav esta implementado mediante una lista desordenada con enlaces que simulen 
 
 - Fuentes de Google Fonts aplicados en toda la página.
 
-- Multimedia: la página incluye archivos multimedia como imágenes de productos y banners. Posee una  sección de outletProductos : la misma está  organizada en cards de forma responsiva utilizando Flexbox.
+- Multimedia: la página incluye archivos multimedia como imágenes de productos y banners.
 
 
-- El proyecto  esta subido a un hosting gratuito. Este es su link: 
+- El proyecto  esta subido a un hosting gratuito. Este es su link: https://marisolbell.github.io/SolHausBeautyTalentoTech/
 
    

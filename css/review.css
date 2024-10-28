@@ -60,7 +60,7 @@
 
 .author {
     font-weight: bold;
-    color: #555;
+    color: var(--text-color);
 }
 
 /* Diseño responsivo */
