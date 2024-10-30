@@ -50,6 +50,7 @@ header{
 
 .logo-title{
     color:var(--accent-color);
+    font-size:1.3rem;
 }
 
 .menu{
