@@ -304,7 +304,7 @@ header{
         position: absolute;
         display:flex;
         flex-direction: column;
-        align-items: end;
+        align-items: flex-start;
         width: 50vw;
         gap:1rem;
         top:0;
@@ -323,7 +323,7 @@ header{
 
     .menu{
         flex-direction: column;
-        align-items:end;
+        align-items:flex-start;
         padding-right:0.5rem;
         
     }
@@ -355,6 +355,13 @@ header{
     }
     .abrir-menu{
         font-size: 1rem;
+    }
+    ul,ol {
+        padding-left: 0rem;
+    } 
+
+    .logo-title{
+        font-size: 1.1rem;
     }
     
 }

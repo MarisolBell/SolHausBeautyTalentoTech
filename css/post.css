@@ -66,7 +66,14 @@ body {
     font-size: 1.1rem;
     margin-bottom: 15px;
   }
-  
+
+  .return-btn{
+    border: none ;
+    padding:0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5%;
+}
  
   /********media queries***********************************/
   @media screen and (max-width:960px){
