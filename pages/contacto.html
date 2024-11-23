@@ -12,7 +12,7 @@
   </head>
   <body>
     <header id="top">
-      <h1 class="header-announcement_text">BIENVENIDOS A SOL HAUS BEAUTY</h1>
+      <h1 class="header-announcement_text">BIENVENIDOS A SOLHAUS BEAUTY</h1>
 
       <div class="nav-menu">
         <div class="brand">
@@ -26,21 +26,27 @@
         </div>
 
         <nav class="nav" id="nav">
+          <button class="cerrar-menu" id="cerrar">
+            <i class="bi bi-x"></i>
+          </button>
           <ul class="menu">
-            <li class="menu__item"><a href="../index.html">Inicio</a></li>
-            <li class="menu__item productos">
+            <li class="menu__item "><a href="../index.html">Inicio</a></li>
+            <li class="menu__item productos ">
               <a href="./productos.html">Productos</a>
-              <ul class="submenu">
-                <li><a href="#">Cosméticos</a></li>
-                <li><a href="#">Perfumes</a></li>
-              </ul>
+              <ul class="submenu"id="category-menu" >
+                <li><a data-category="beauty">Cosméticos</a></li>
+                <li><a data-category="fragrances">Perfumes</a></li>
+                <li><a data-category="skin-care">Skin-care</a></li>
+              </ul> 
             </li>
 
             <li class="menu__item">
               <a href="./informacion.html">Información</a>
             </li>
 
-            <li class="menu__item active"><a href="./contacto.html">Contacto</a></li>
+            <li class="menu__item active">
+              <a href="./contacto.html ">Contacto</a>
+            </li>
 
             <li>
               <div class="dropdown">
@@ -61,7 +67,6 @@
             <button type="button" id="search-button" class="search-btn">
               <i class="bi bi-search"></i>
             </button>
-            
           </div>
           <div class="bag-container">
             <a class="bag" href="#"><i class="bi bi-bag"></i></a>
@@ -198,5 +203,6 @@
       src="../img/whatsapp-logo.png"
       alt="logo de whatsapp"
     />
+  <script src="../js/menuHamburguesa.js" defer></script> 
   </body>
 </html>

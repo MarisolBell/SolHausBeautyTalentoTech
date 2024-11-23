@@ -49,16 +49,232 @@
     font-size: 1.2rem;
     color:var(--text-color);
 }
+/* Contenedor de productos */
 
+.productos-container-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color); 
+}
+
+/* Contenedor que agrupa el aside y los productos */
+.productos-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+/* Estilo del contenedor de productos */
+.productos-catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    flex: 1; /* Para ocupar el espacio restante a la derecha del aside */
+    margin: 2rem 0;
+    color: var(--text-color); 
+    background-color: var(--clr-white); 
+}
+
+/* Aside de categorías */
+.categories-aside {
+    width: 300px;
+    padding: 1rem;
+    border: 1px solid var(--border-color); 
+    background-color: var(--primary-color); 
+    margin-left: 3rem;
+    margin-bottom: 2.5rem;
+    
+}
+
+.categories-aside h3 {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: var(--clr-white); 
+    
+}
+
+.categories-aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categories-aside li {
+    margin: 0.5rem 0;
+}
+
+.categories-aside button {
+    background-color: var(--accent-color); 
+    border: none;
+    padding: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.categories-aside button:hover {
+    background-color: var(--background-color); 
+}
+
+/* Botón "Catálogo Completo" */
+#catalogo-button {
+    background-color: var(--primary-color); /* Fondo del botón de catálogo */
+    color: var(--clr-white); /* Color del texto */
+    border: none;
+    padding: 0.5em;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+#catalogo-button:hover {
+    background-color: var(--accent-color); /* Color de hover */
+}
+/* Estilos de la tarjeta de producto */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.card p {
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.card button {
+    padding: 8px 12px;
+    background-color: var(--accent-color);
+    color: var(--clr-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* clase para ocultar catalogo de productos o viewdetail */
+.hidden {
+    visibility:hidden;
+  }
+  
 /********media queries***********************************/
 @media screen and (max-width:960px){
-    .abrir-menu{
+    .abrir-menu,
+    .cerrar-menu{
         display:block;
-        margin:0.5 rem;
+        border:0;
+        font-size: 1.3rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    .cerrar-menu{
+        color: var(--clr-white);
     }
     .nav{
-        display: none;
+        opacity:0;
+        visibility: hidden;
+        position: absolute;
+        display:flex;
+        flex-direction: column;
+        align-items: end;
+        width: 50vw;
+        gap:1rem;
+        top:0;
+        right:0;
+        bottom: 0;
+        background-color: var(--clr-black);
+        padding: 4.7rem;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
+        z-index:1000;
     }
+    
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu{
+        flex-direction: column;
+        align-items:end;
+        padding-right:0.5rem;
+        
+    }
+    
+    .menu__item a{
+        color: var(--clr-white);
+    }
+    
+    .submenu a{
+        color:var(--clr-black);
+        
+    }
+    .submenu li{
+        margin:0.8rem;
+       
+    }
+    
+    .bi-person,
+    .bi-x{
+        color: var(--accent-color);
+        font-size: 1.5rem;   
+    }
+    
+}
+@media (max-width: 768px) {
+    .productos-layout {
+        flex-direction: column; /* Cambia la dirección a columna */
+        gap: 2rem; /* Espacio entre elementos en columna */
+    }
+    
+    .categories-aside {
+        width: 100%; /* Ocupa el 100% del ancho en móvil */
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+
+    .productos-catalogo {
+        justify-content: center; /* Alinea los productos a la izquierda */
+    }
+
+    /* Títulos y tamaños de texto para móvil */
+    .productos-container-title {
+        font-size: 2rem; /* Aumenta el tamaño del título */
+    }
+    
+    
 }
 @media screen and (max-width: 650px) {
     .logo {

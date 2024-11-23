@@ -5,6 +5,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    
 }
 
 /* Variables de Colores */
@@ -23,7 +24,9 @@
 
 header{
     padding-top: 80px; 
+   
 } 
+
 
 .header-announcement_text {
     position:fixed;
@@ -50,7 +53,7 @@ header{
 
 .logo-title{
     color:var(--accent-color);
-    font-size:1.3rem;
+    font-size: 1.3rem;
 }
 
 .menu{
@@ -116,6 +119,7 @@ header{
 .submenu a {
     text-decoration: none;
     display: block;
+    cursor:pointer;
 }
 
 .productos {
@@ -245,14 +249,17 @@ header{
     border-radius: 50%;
     padding: 2px 5px;
 }
-.abrir-menu{
+.abrir-menu,
+.cerrar-menu {
     display:none;
     border: none;
     margin:1rem;
     background-color: var(--background-secondary);
     font-size: 2rem;
 }
-
+.bi-list{
+    font-size: 1.5rem;
+}
 
 /********Logo whatsapp***********************************/
 
@@ -279,11 +286,69 @@ header{
 
 /********media queries***********************************/
 @media screen and (max-width:960px){
-    .abrir-menu{
+    .abrir-menu,
+    .cerrar-menu{
         display:block;
-        margin:0.5 rem;
+        border:0;
+        font-size: 1.3rem;
+        background-color: transparent;
+        cursor: pointer;
     }
+    
+    .cerrar-menu{
+        color: var(--clr-white);
+    }
+    .nav{
+        opacity:0;
+        visibility: hidden;
+        position: absolute;
+        display:flex;
+        flex-direction: column;
+        align-items: end;
+        width: 50vw;
+        gap:1rem;
+        top:0;
+        right:0;
+        bottom: 0;
+        background-color: var(--clr-black);
+        padding: 4.7rem;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
+        z-index:1000;
+    }
+    
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu{
+        flex-direction: column;
+        align-items:end;
+        padding-right:0.5rem;
+        
+    }
+    
+    .menu__item a{
+        color: var(--clr-white);
+    }
+    
+    .submenu a{
+        color:var(--clr-black);
+        
+    }
+    .submenu li{
+        margin:0.8rem;
+       
+    }
+    
+    .bi-person,
+    .bi-x{
+        color: var(--accent-color);
+        font-size: 1.5rem;   
+    }
+    
 }
+
 @media screen and (max-width: 650px) {
     .logo {
         max-width: 3rem;

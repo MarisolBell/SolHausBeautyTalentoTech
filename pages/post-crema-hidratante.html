@@ -28,14 +28,18 @@
         </div>
 
         <nav class="nav" id="nav">
+          <button class="cerrar-menu" id="cerrar">
+            <i class="bi bi-x"></i>
+          </button>
           <ul class="menu">
             <li class="menu__item"><a href="../index.html">Inicio</a></li>
             <li class="menu__item productos active">
               <a href="./productos.html">Productos</a>
-              <ul class="submenu">
-                <li><a href="#">Cosméticos</a></li>
-                <li><a href="#">Perfumes</a></li>
-              </ul>
+              <ul class="submenu"id="category-menu" >
+                <li><a data-category="beauty">Cosméticos</a></li>
+                <li><a data-category="fragrances">Perfumes</a></li>
+                <li><a data-category="skin-care">Skin-care</a></li>
+              </ul> 
             </li>
 
             <li class="menu__item">
@@ -220,5 +224,6 @@
       src="../img/whatsapp-logo.png"
       alt="logo de whatsapp"
     />
+    <script src="../js/menuHamburguesa.js" defer></script>
   </body>
 </html>

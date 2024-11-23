@@ -101,14 +101,70 @@
 
 /********media queries***********************************/
 @media screen and (max-width:960px){
-    .abrir-menu{
-        display:block;
-        margin:0.5 rem;
+   
+    .abrir-menu,
+    .cerrar-menu{
+            display:block;
+            border:0;
+            font-size: 1.3rem;
+            background-color: transparent;
+            cursor: pointer;
+    }
+        
+    .cerrar-menu{
+            color: var(--clr-white);
     }
     .nav{
-        display: none;
+            opacity:0;
+            visibility: hidden;
+            position: absolute;
+            display:flex;
+            flex-direction: column;
+            align-items: end;
+            width: 50vw;
+            gap:1rem;
+            top:0;
+            right:0;
+            bottom: 0;
+            background-color: var(--clr-black);
+            padding: 4.7rem;
+            box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
+            z-index:1000;
     }
+        
+    .nav.visible{
+            opacity: 1;
+            visibility: visible;
+    }
+    
+    .menu{
+            flex-direction: column;
+            align-items:end;
+            padding-right:0.5rem;
+            
+    }
+        
+    .menu__item a{
+            color: var(--clr-white);
+    }
+        
+    .submenu a{
+            color:var(--clr-black);
+            
+    }
+    .submenu li{
+            margin:0.8rem;
+           
+    }
+        
+    .bi-person,
+    .bi-x{
+            color: var(--accent-color);
+            font-size: 1.5rem;   
+    }
+        
 }
+
 
 @media (max-width: 600px) {
     .formulario-contenido {

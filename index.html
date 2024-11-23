@@ -18,6 +18,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/sections.css" />
@@ -41,14 +42,18 @@
         </div>
 
         <nav class="nav" id="nav">
+          <button class="cerrar-menu" id="cerrar">
+            <i class="bi bi-x"></i>
+          </button>
           <ul class="menu">
             <li class="menu__item active"><a href="./index.html">Inicio</a></li>
             <li class="menu__item productos">
               <a href="./pages/productos.html">Productos</a>
-              <ul class="submenu">
-                <li><a href="#">Cosméticos</a></li>
-                <li><a href="#">Perfumes</a></li>
-              </ul>
+              <ul class="submenu"id="category-menu" >
+                <li><a data-category="beauty">Cosméticos</a></li>
+                <li><a data-category="fragrances">Perfumes</a></li>
+                <li><a data-category="skin-care">Skin-care</a></li>
+              </ul> 
             </li>
 
             <li class="menu__item">
@@ -80,7 +85,7 @@
             </button>
           </div>
           <div class="bag-container">
-            <a class="bag" href="#"><i class="bi bi-bag"></i></a>
+            <a class="bag" href="./pages/cart.html"><i class="bi bi-bag"></i></a>
             <span id="numerito" class="numerito">0</span>
           </div>
         </div>
@@ -394,5 +399,6 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
-  </body>
+    <script src="./js/menuHamburguesa.js" defer></script>
+  </body> 
 </html>
