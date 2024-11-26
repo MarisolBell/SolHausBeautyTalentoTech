@@ -2,17 +2,18 @@
 
 /* Variables de Colores */
 :root{
-    --primary-color:  #2C3E50;
+    --primary-color:  #c89591;
     --secondary-color:#ab352d;
     --background-color: #e0dcdc; 
-    --background-secondary: #f0e5e5;
-    --backgroung-orange:#f5b7b2fb;
+    --background-secondary: #f0e5e5; 
+    --backgroung-orange:#f3d4d2;
     --text-color: #242424; 
-    --accent-color:#f14e42 ; 
+    --accent-color:#b97d79 ; 
     --border-color: #737679; 
     --clr-white: #FFFFFF;
     --clr-black: #242424;
 }
+
 
 /* Estilos Generales */
 * {
