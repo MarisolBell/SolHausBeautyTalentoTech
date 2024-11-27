@@ -49,11 +49,6 @@
             <li class="menu__item active"><a href="./index.html">Inicio</a></li>
             <li class="menu__item productos">
               <a href="./pages/productos.html">Productos</a>
-              <ul class="submenu"id="category-menu" >
-                <li><a data-category="beauty">Cosméticos</a></li>
-                <li><a data-category="fragrances">Perfumes</a></li>
-                <li><a data-category="skin-care">Skin-care</a></li>
-              </ul> 
             </li>
 
             <li class="menu__item">
@@ -70,8 +65,8 @@
                   <i class="bi bi-person"></i>
                 </button>
                 <div class="dropdown-content" id="dropdown-content">
-                  <a href="#">Iniciar sesión</a>
-                  <a href="#">Registrarse</a>
+                  <a href="./pages/login.html">Iniciar sesión</a>
+                  <a href="./pages/registro.html">Registrarse</a>
                 </div>
               </div>
             </li>
@@ -85,7 +80,9 @@
             </button>
           </div>
           <div class="bag-container">
-            <a class="bag" href="./pages/cart.html"><i class="bi bi-bag"></i></a>
+            <a class="bag" href="./pages/cart.html"
+              ><i class="bi bi-bag"></i
+            ></a>
             <span id="numerito" class="numerito">0</span>
           </div>
         </div>
@@ -300,15 +297,19 @@
         <h5 class="newsletter-container-title">
           Dejanos tu mail para recibir novedades!
         </h5>
-        <form id="newsletter-form" action="submit">
+        <form
+          id="newsletter-form"
+          action="https://formspree.io/f/mrbznwjy"
+          method="POST"
+        >
           <input
             class="newsletter-input"
             type="email"
-            name=""
-            id=""
+            name="email"
+            required
             placeholder="Tu e-mail"
           />
-          <button class="send-btn">Enviar</button>
+          <button class="send-btn" type="submit">Enviar</button>
         </form>
       </section>
     </main>
@@ -348,15 +349,15 @@
           <div>
             <ul class="redes-sociales-items">
               <li class="redes-sociales-icon">
-                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
               </li>
               <li class="redes-sociales-icon">
-                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
               </li>
               <li class="redes-sociales-icon">
-                <a href="#"><i class="bi bi-tiktok"></i></a>
+                <a href="https://www.tiktok.com" target="_blank"><i class="bi bi-tiktok"></i></a>
               </li>
-            </ul>
+            </ul>  
           </div>
         </div>
         <div class="contacto">
@@ -399,6 +400,10 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/menuHamburguesa.js" defer></script>
-  </body> 
+    <script src="./js/script.js" defer></script>
+    <script src="./js/cart.js" defer></script>
+    <script src="./js/newsletterForm.js" defer></script>
+  </body>
 </html>

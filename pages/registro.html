@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulario de Contacto</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/contacto.css">
-    <link rel="stylesheet" href="../css/footer.css">
-  
+    <title>Tienda de Productos SolHaus Beauty</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/productos.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/loginRegistro.css" />
   </head>
   <body>
     <header id="top">
@@ -30,8 +33,8 @@
             <i class="bi bi-x"></i>
           </button>
           <ul class="menu">
-            <li class="menu__item "><a href="../index.html">Inicio</a></li>
-            <li class="menu__item productos ">
+            <li class="menu__item"><a href="../index.html">Inicio</a></li>
+            <li class="menu__item productos active">
               <a href="./productos.html">Productos</a>
             </li>
 
@@ -39,8 +42,8 @@
               <a href="./informacion.html">Información</a>
             </li>
 
-            <li class="menu__item active">
-              <a href="./contacto.html ">Contacto</a>
+            <li class="menu__item">
+              <a href="./contacto.html">Contacto</a>
             </li>
 
             <li>
@@ -73,53 +76,33 @@
         </button>
       </div>
     </header>
-    <main>
-      <section class="formulario-centro">
-        <div class="formulario-contenido">
-          <form
-            action="https://formspree.io/f/mrbznwjy"
-            method="POST"
-            class="contact-form"
-          >
-            <h2>Contacto</h2>
-
-            <label for="nombre">Nombre Completo:</label>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Ingrese su nombre y apellido..."
-            />
-
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Ingrese su dirección de correo electrónico..."
-              required
-            />
-
-            <label for="mensaje">Mensaje</label>
-            <textarea
-              id="mensaje"
-              name="mensaje"
-              rows="5"
-              placeholder="Comentarios..."
-            ></textarea>
-
-            <input
-              type="hidden"
-              name="_subject"
-              value="Mensaje Nuevo Contacto"
-            />
-
-            <div class="form-buttons">
-              <button type="submit" class="boton">Enviar</button>
-            </div>
-          </form>
-        </div>
-      </section>
+    <main class="main-register" >
+      <div class="form-container-register">
+        <h1>Registrate</h1>
+        <p>Crea tu cuenta si aún no sos cliente</p>
+        <form id="register-form" class="register-form">
+          <label for="register-user">Usuario</label>
+          <input class="usuario" type="text" name="register-user" id="register-user" placeholder="Nombre y Apellido" required>
+          
+  
+          <label for="email">Correo electrónico</label>
+          <input class="usuario" type="email" name="email" id="email" placeholder="Correo electrónico" required>
+         
+  
+          <label for="register-password">Contraseña</label>
+          <input class="usuario" type="password" name="register-password" id="register-password" placeholder="Contraseña" required minlength="8">
+          
+  
+          <label for="confirm-password">Confirmar Contraseña</label>
+          <input class="usuario" type="password" name="confirm-password" id="confirm-password" placeholder="Confirmar contraseña" required>
+          
+  
+          <button class="register"  type="submit">Crear cuenta</button>
+         
+        </form>
+        <p>¿Ya estás registrado? <a href="./login.html#login-form">Iniciar sesión</a></p>
+        <a href="../index.html">Volver al inicio</a>
+      </div>
     </main>
     <footer>
       <div class="suport-info">
@@ -166,6 +149,7 @@
                 <a href="https://www.tiktok.com" target="_blank"><i class="bi bi-tiktok"></i></a>
               </li>
             </ul>
+            
           </div>
         </div>
         <div class="contacto">
@@ -198,10 +182,10 @@
       src="../img/whatsapp-logo.png"
       alt="logo de whatsapp"
     />
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="../js/menuHamburguesa.js" defer></script>
-  <script src="../js/script.js" defer></script>
-  <script src="../js/cart.js" defer></script>
-  <script src="../js/formularioContacto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/menuHamburguesa.js" defer></script>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/cart.js" defer></script>
+    <script src="../js/validarRegistro.js"></script>
   </body>
 </html>

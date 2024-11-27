@@ -1,0 +1,157 @@
+/* Importación de la fuente Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Variables de Colores */
+:root{
+    --primary-color:  #c89591;
+    --secondary-color:#ab352d;
+    --background-color: #e0dcdc; 
+    --background-secondary: #f0e5e5; 
+    --backgroung-orange:#f3d4d2;
+    --backgroung-gray:#ebe7e7;
+    --text-color: #242424; 
+    --accent-color:#b97d79 ; 
+    --border-color: #737679; 
+    --clr-white: #FFFFFF;
+    --clr-black: #242424;
+}
+
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Estilos para la pantalla principal de registro/login */
+.main-register-login, .main-register {
+
+    color: var(--title-color);  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    position: relative; 
+    background-size: cover;
+    background-position: center;
+    background-color: var(--clr-white);
+}
+
+/* Estilo para los formularios de registro y sesión */
+.form-container-register, .form-container-sesion {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 30px;
+    background-color: var(--backgroung-gray); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 2rem; 
+    margin-top: 1rem;
+}
+
+/* Estilo para los títulos y párrafos dentro del formulario */
+.form-container-register h1, .form-container-sesion h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem; 
+}
+
+.form-container-register p, .form-container-sesion p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+/* Estilo para los campos de usuario y contraseña */
+.usuario, .password {
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    padding: 10px 15px;
+    width: 100%;
+    margin-bottom: 1.5rem; 
+    font-size: 1rem;
+}
+
+/* Estilo para los labels dentro del formulario */
+
+label {
+    margin-bottom: 0.8rem; 
+    font-weight: bold;
+    display: block; 
+}
+/* Cambio de color del borde cuando el input está enfocado */
+
+input:focus {
+    border-color: var(--secondary-color);
+    border-width: 3px;
+    outline: none;
+}
+/* Estilo para el botón de login/registro */
+.register-login, .register {
+    background-color: var(--accent-color); 
+    color: var(--clr-white); 
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    border: none;
+    margin-bottom: 2rem; 
+}
+
+.register-login:hover, .register:hover {
+    background-color: var(--primary-color);
+}
+.register-login, .register{
+    background-color: var(--secondary-color);
+}
+
+
+/* Estilos de enlaces */
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+/* Estilos para los botones de enviar o acciones */
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem; 
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    .main-register-login {
+        background-position: top;
+    }
+
+    .form-container-register, .form-container-sesion {
+        width: 90%;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .form-container-register p, .form-container-register h1,
+    .form-container-sesion p, .form-container-sesion h1 {
+        margin-bottom: 1.5rem; 
+    }
+
+    .usuario, .password {
+        margin-bottom: 1.2rem; 
+    }
+
+    .register-login {
+        margin-bottom: 1.5rem; 
+    }
+}

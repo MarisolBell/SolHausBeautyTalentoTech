@@ -33,7 +33,7 @@ header{
     position:fixed;
     width: 100%;
     top:0;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     color: var(--clr-white);
     padding: 30px;
     font-size: 18px;
