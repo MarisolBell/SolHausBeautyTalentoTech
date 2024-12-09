@@ -7,7 +7,6 @@
     --background-color: #e0dcdc; 
     --background-secondary: #f0e5e5; 
     --backgroung-orange:#f3d4d2;
-    --backgroung-gray:#ebe7e7;
     --text-color: #242424; 
     --accent-color:#b97d79 ; 
     --border-color: #737679; 
@@ -62,7 +61,7 @@
 .contact-form input,
 .contact-form textarea {
     padding: 0.5rem;
-    border: 1px solid var(--backgroung-gray);
+    border: 1px solid var(--background-color-gray);
     border-radius: 0.5rem;
     font-size: 1rem;
     width: 100%;
@@ -70,8 +69,7 @@
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: var(--secondary-color);
-    border-width: 3px; 
+    border-color: var(--background-color-gray);
     outline: none;
 }
 

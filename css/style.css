@@ -33,7 +33,7 @@ header{
     position:fixed;
     width: 100%;
     top:0;
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
     color: var(--clr-white);
     padding: 30px;
     font-size: 18px;
@@ -49,13 +49,10 @@ header{
 }
 
 .logo{
-    max-width: 6rem;    
+    max-width: 16rem;    
 }
 
-.logo-title{
-    color:var(--accent-color);
-    font-size: 1.3rem;
-}
+
 
 .menu{
     display:flex;
@@ -71,6 +68,7 @@ header{
     background-color: var(--background-secondary);
     box-shadow: 0 4px 6px var(--accent-color);
     padding: 10px 5px;
+   
     
    
 }
@@ -99,63 +97,6 @@ header{
     font-weight: bolder;
 }
 
-/***************submenu categorías de productos*********/
-
-.submenu{
-    display: none;
-    position: absolute;
-    list-style: none;
-    z-index: 1;
-    background-color: var(--clr-white);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-    top: 90%;
-    left: -60%;
-}
-
-.submenu li {
-    margin: 20px;
-    border-radius: 5px;
-  }
-
-.submenu a {
-    text-decoration: none;
-    display: block;
-    cursor:pointer;
-}
-
-.productos {
-    position:relative;
-}
-
-.productos:hover >a {
-    background-color: var(--background-color-gray);
-    color: var(--accent-color); 
-    padding:5px;
-    border-radius: 5px;   
-}
-
-/* Muestra el submenu cuando pasas el cursor por el item */
-.menu__item:hover .submenu {
-    display: block;
-  }
-
-
-/*********************search**********************************/
-/*botón con ícono de lupa*/
-.search-btn{
-    background-color: transparent;
-    border:none;
-    cursor:pointer;
-    z-index: 1; /* Asegura que la lupa esté por encima del input inicialmente */
-}
-
-/* Estilo del contenedor de búsqueda */
-.search {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
 
 /*********************dropdown usuario ******************/
 .dropdown {
@@ -173,8 +114,8 @@ header{
     z-index: 1;
     flex-direction: column;
     /* Posiciona el menú desplegable hacia abajo y a la izquierda */
-    top: 100%;
-    left: -600%;
+    top: 80%;
+    left: -580%;
 }
  /* Estilo de los links dentro del contenido desplegable */
  .dropdown-content a {
@@ -209,7 +150,7 @@ header{
     font-size: 1.8rem;
 }
 
-/***** iconos bag y search *****/
+/***** icono bag *****/
 .right-icons {
     display: flex;
     align-items: center;
@@ -218,7 +159,6 @@ header{
     margin-left: 3rem;
 }
 
-.right-icons .search-btn,
 .right-icons .bag {
     background: transparent;
     border: none;
@@ -226,8 +166,7 @@ header{
     font-size: 1.5rem;
 }
 
-.bi-person,
-.bi-search{
+.bi-person{
     color: var(--clr-black);
     font-size: 1.6rem;
 }
@@ -283,7 +222,6 @@ header{
 .scroll-up i {
     font-size: 2.5rem; 
 }
-
 
 /********media queries***********************************/
 @media screen and (max-width:960px){
@@ -352,7 +290,7 @@ header{
 
 @media screen and (max-width: 650px) {
     .logo {
-        max-width: 3rem;
+        max-width: 15rem;
     }
     .abrir-menu{
         font-size: 1rem;

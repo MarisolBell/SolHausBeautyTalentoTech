@@ -20,7 +20,6 @@
   --clr-white: #FFFFFF;
   --clr-black: #242424;
 }
-
 /* Estilos generales */
 body {
     color: var(--clr-black);
@@ -57,7 +56,7 @@ body {
   /* Título del post */
   .post-title {
     font-size: 2.5rem;
-    color: var(--primary-color); /* Color principal */
+    color: var(--primary-color); 
     margin-bottom: 20px;
     text-align: center;
   }
@@ -67,14 +66,7 @@ body {
     font-size: 1.1rem;
     margin-bottom: 15px;
   }
-
-  .return-btn{
-    border: none ;
-    padding:0.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5%;
-}
+  
  
   /********media queries***********************************/
   @media screen and (max-width:960px){

@@ -14,7 +14,6 @@
 
 
 
-
 /********FOOTER**********************************************/
 
 .suport-info{
@@ -23,9 +22,9 @@
     grid-template-rows: 1fr;
     gap:1rem;
     padding: 2rem;
-    background-color:var(--primary-color);
+    background-color:var(--secondary-color);
     color:var(--clr-white)
-
+    
 }
 
 .suport-info li{
